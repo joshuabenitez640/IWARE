@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project I.W.A.R.E - Infrastructure Watch for Assessment, Report, and Evaluation</title>
+    <link rel="stylesheet" href="../Web/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="../Web/Image/3e2d3d5f-520f-4032-a923-a94fd55f0f66.png" alt="Project I.W.A.R.E. Logo" class="logo-img">
+                    <span class="brand-name">I.W.A.R.E.</span>
+                </div>
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#infrastructure">Infrastructure</a>
+                    <a href="#report">Report Issue</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Project I.W.A.R.E.</h1>
+            <p>Infrastructure Watch for Assessment, Report, and Evaluation</p>
+            <button class="cta-button" onclick="document.getElementById('report').scrollIntoView()">Report an Issue</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="features">
+        <h2 class="section-title fade-in">About the Project</h2>
+        <div class="about-wrapper">
+            <div class="about-text fade-in">
+                <p>
+                    <strong>Project I.W.A.R.E. stands for Infrastructure Watch for Assessment, Reporting, and Evaluation.</strong> This project focuses on raising awareness about the importance of checking and monitoring our community infrastructure like roads, bridges, public buildings, and drainage systems. Many people use these structures every day, but not everyone realizes that poor maintenance can lead to accidents, damage, and bigger problems in the future.
+                </p>
+                <p>
+                    The goal of I.W.A.R.E. is to encourage people to notice issues early, report them, and help keep our surroundings safe. By spreading information and educating the public, we want everyone to take part in protecting and improving the places we live in.
+                </p>
+                <p>
+                    <strong>"Project I.W.A.R.E. aims to build a community that cares about the safety and condition of its public spaces through awareness, reporting, and shared responsibility."</strong>
+                </p>
+            </div>
+            <div class="about-image fade-in">
+                <img src="../Web/Image/ARCHITECTURAL-DESIGN.jpg" alt="Project I.W.A.R.E. Community Infrastructure">
+            </div>
+        </div>
+
+        <div class="image-gallery fade-in">
+           
+            <div class="gallery-item">
+                <img src="../Web/Image/Roadside inspection.webp" alt="Community Engagement">
+                <h4>Roads Inspection</h4>
+            </div>
+            <div class="gallery-item">
+                <img src="../Web/Image/Bridges Inspection.webp" alt="Infrastructure Inspection">
+                <h4>Bridges Inspection</h4>
+            </div>
+            <div class="gallery-item">
+                <img src="../Web/Image/Public Building.jpg" alt="Road Maintenance">
+                <h4>Public Building</h4>
+            </div>
+            <div class="gallery-item">
+                <img src="../Web/Image/Drainage System.webp" alt="Public Safety">
+                <h4>Drainage Systems</h4>
+            </div>
+            <div class="gallery-item">
+                <img src="../Web/Image/community engagement.jpeg" alt="Sustainable Infrastructure">
+                <h4>Community Engagement</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Issues Section -->
+    <section id="infrastructure" class="issues-section">
+        <h2 class="section-title fade-in">Infrastructure Issues</h2>
+        <div class="issues-grid">
+            <div class="issues-box slide-left">
+                <h3>Infrastructure plays a huge role in our daily lives</h3>
+                <p>We walk on sidewalks, ride on roads, and study or work inside buildings. When these structures are old or damaged, they can become unsafe. This is why monitoring them is important.</p>
+                <h3 class="sub-heading">Some common issues include:</h3>
+                <ul>
+                    <li>Cracks on roads and bridges</li>
+                    <li>Clogged drainage causing floods</li>
+                    <li>Weak or damaged building walls</li>
+                    <li>Broken streetlights</li>
+                    <li>Rusting metal parts in public structures</li>
+                </ul>
+                <p>By checking these early, we can avoid accidents, delays, and costly repairs. Project I.W.A.R.E. encourages everyone to stay observant and report anything that looks unsafe.</p>
+            </div>
+            <div class="issues-box slide-right">
+                <h3>How Reporting Makes a Difference</h3>
+                <p>Sometimes people see a problem but don't know how to report it or feel like it won't matter. But reporting small issues can prevent bigger hazards.</p>
+                <h3 class="sub-heading">Reporting helps because:</h3>
+                <ul>
+                    <li>It alerts local authorities faster</li>
+                    <li>It prevents minor damage from becoming major</li>
+                    <li>It keeps the community safer</li>
+                    <li>It encourages others to be responsible</li>
+                    <li>It helps improve the overall condition of public places</li>
+                </ul>
+                <p>Even simple actions like taking a photo, telling barangay officials, or sending a short message can already make an impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report Form Section -->
+    <section id="report" class="form-section">
+        <h2 class="section-title fade-in">Report an Infrastructure Issue</h2>
+        <div class="form-container fade-in">
+            <h3>Share Your Observations</h3>
+            <p class="form-intro">Please fill out the form below to help raise awareness about damaged or unsafe infrastructure in your area.</p>
+
+            <form onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location of Issue:</label>
+                    <input type="text" id="location" name="location" placeholder="Street, barangay, or area name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Type of Problem:</label>
+                    <select id="type" name="type" required>
+                        <option value="">Select a problem type</option>
+                        <option value="pothole_broken">Pothole / broken light-cracked wall</option>
+                        <option value="cracks">Cracks on roads and bridges</option>
+                        <option value="drainage">Clogged drainage causing floods</option>
+                        <option value="building">Weak or damaged building walls</option>
+                        <option value="streetlight">Broken streetlights</option>
+                        <option value="rust">Rusting metal parts in public structures</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" placeholder="Please describe the issue in detail" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="image">Upload Image (Optional):</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                </div>
+
+                <button type="submit" class="cta-button secondary">Submit Report</button>
+            </form>
+
+            <p class="form-note">Your report helps support the mission of Project I.W.A.R.E. to keep our community safe and informed.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="cta-section fade-in">
+        <h2>Get Involved</h2>
+        <p>Have questions or want to learn more about Project I.W.A.R.E.? Contact us today!</p>
+        <p class="contact-info">
+            📧 Email: info@iware.ph | 📞 Call: +63 912 345 6789
+        </p>
+        <p>Together, we can build a safer community through awareness and action.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#about">About Project</a></li>
+                    <li><a href="#infrastructure">Infrastructure Issues</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#infrastructure">Assessment</a></li>
+                    <li><a href="#report">Reporting</a></li>
+                    <li><a href="#about">Education</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Project I.W.A.R.E. All rights reserved.</p>
+            <p>Infrastructure Watch for Assessment, Report, and Evaluation</p>
+        </div>
+    </footer>
+
+    <script src="../Web/js/site.js"></script>
+</body>
+</html>
