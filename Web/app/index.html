@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itadori Yuji</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+.text-color{
+    color:#7b4fbf;
+    font-weight: bold;
+    font-size: 20px;
+}
+.banner{
+    border-radius: 8px;
+    background-color: #C9B3E8;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.content-container{
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+.container{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin: -75px auto 0 auto; 
+    background-image: url('./image/images.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease;
+}
+.container:hover {
+    background-image: url('./image/sukuna.jpeg');
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.card-body{
+    padding: 20px;
+}
+
+.name{
+    font-size: 36px;
+    color: #000;
+    margin-top: -10px;
+}
+.icon-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+i{
+    font-size: 27px;
+    color: #333;
+    align-items: center;
+}
+
+.html-icon i{
+    color: #e34c26;
+}
+.css-icon i{
+    color: #264de4;
+}
+.js-icon i{
+    color: #f0db4f;
+}
+
+.icon:hover{
+    
+    cursor: pointer;
+}
+
+.html-icon:hover i{
+    color: #e34c26;
+}
+.css-icon:hover i{
+    color: #264de4;
+}
+.js-icon:hover i{
+    color: #f0db4f;
+}
+
+.contact-container{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-button{
+    width: 90%;
+    padding: 15px;
+    border-color: none;
+    background-color: #7b4fbf;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.contact-button i{
+    margin-right: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-color: none;
+}
+
+</style>
+</head>
+<body>
+    <div class="content-container">
+        <div class="banner"></div>
+        <div class="container"></div>
+        <div class="card-body">
+            <h1 class="name" id="character-name">Itadori Yuji</h1>
+            <p class="text-color">Aspiring Web Developer</p>
+            <div class="contents">
+            <p>I'm currently learning HTML, CSS, and JavaScript.</p>
+            <p>I enjoy building simple websites and improving my skills <br>in web development.</p>
+            </div>
+        </div>
+        <div class="icon-app">
+            <div class="icon">
+                <div class="html-icon">
+                    <a><i class="fab fa-html5"></i></a>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="css-icon">
+                    <a><i class="fab fa-css3-alt"></i></a>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="js-icon">
+                    <a><i class="fab fa-js"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-container">
+            <button class="contact-button"><i class="fas fa-envelope"></i>Contact Me</button>
+        </div>
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+        const name = document.getElementById('character-name');
+
+        container.addEventListener('mouseover', function() {
+            name.textContent = 'Ryomen Sukuna';
+        });
+
+        container.addEventListener('mouseout', function() {
+            name.textContent = 'Itadori Yuji';
+        });
+    </script>
+</body>
+</html>

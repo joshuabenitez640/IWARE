@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Login page</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+         font-family: 'DM Sans', sans-serif;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: #f0f0f0;
+         height: 100vh;
+         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                        rgba(0, 0, 0, 0.5)), url(../app/image/bgcolor.jpg);
+         background-repeat: no-repeat;
+         height: 100vh;
+         background-size: cover;
+         background-position: center;
+    }
+   .box-content{
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease-in-out;
+   }
+
+   .box-content:hover{
+    transform: translateY(-5px);
+   }
+   
+   .logo-section{
+        text-align: center;
+        margin-bottom: 20px;
+   }
+
+   .logo-section img {
+        width: 50%;
+        border-radius: 50%;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 700;
+        
+    }
+    .subtitle{
+        margin-top: 10px;
+        font-size: 12px;
+        color: #c0392b;
+        letter-spacing: 1px;
+    }
+    .sign-in-subtitle{
+        margin-top: 20px;
+        letter-spacing: 2px;
+        color: #aaa;
+        font-size: 10px;
+    }
+
+    .input-box{
+        margin-bottom: 15px;
+    }
+    .input-wrapper{
+        display: flex;
+        align-items: center;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 10px 12px;
+        gap: 10px;
+    }
+    .input-box label{
+        font-size: 13px;
+        font-weight: 500;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .input-wrapper i{
+        color: #aaa;
+        font-size: 13px;
+    }
+    .input-wrapper input{
+        border: none;
+        outline: none;
+        font-size: 13px;
+        font-family: 'DM Sans', sans-serif;
+        width: 100%;
+        color: #333;
+    }
+    .btn-signin{
+        padding: 12px;
+        width: 100%;
+        margin-top: 20px;
+        color: #fff;
+        border: none;
+        font-size: 14px;
+        background-color: #c0392b;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-family: 'DM Sans', sans-serif;
+    }
+   .btn-signin:hover {
+        background-color: #a93226;
+        transform: translateY(-2px);
+        box-shadow: 0px 4px 15px rgba(192, 57, 43, 0.4);
+    }
+   .divider{
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+   }
+   .divider a{
+    color: #a93226;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 10px;
+   }
+
+   footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .footer-p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+    font-weight: 500;
+   }
+</style>
+</head>
+<body>
+   <div class="container">
+        <div class="box-content">
+            <!-- LOGO --->
+             <div class="logo-section">
+                <img src="../app/image/logo.jpg" alt="logo">
+                <h2>Ramen Shop</h2>
+                <p class="subtitle">ONLINE LOGIN</p>
+                <p class="sign-in-subtitle">Login here</p>
+             </div>
+
+             <form action="#">
+                <div class="input-box">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" name="email" placeholder="youremailaddress">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-key"></i>
+                        <input type="password" name="password" placeholder="Enter your password">
+                    </div>
+                </div>
+
+                <div class="divider">
+                    <a href="#">forgot password</a>
+                </div>
+              <button type="submit" class="btn-signin">Sign In</button>
+             </form>
+
+             <footer>
+                <p class="footer-p">Login your account to view your favorite ramen menu</p>
+             </footer>
+        </div>
+   </div>
+
+</body>
+</html>

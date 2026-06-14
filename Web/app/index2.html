@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Website</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Poppins', san-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+   
+    }
+
+    .header-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-box{
+        padding: 20px 30px;
+        border: 4px solid #fff;
+        width: 500px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    p{
+        text-align: justify;
+        word-spacing: 2px;
+        font-size: 15px;
+    }
+    h1{
+        margin-bottom: 20px;
+        text-align: center;
+         color:#7b4fbf;
+    }
+    h3{
+        margin-bottom: 20px;
+        justify-content: space-between;
+        font-size: 16px;
+    }
+
+    .image-src{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .image-content{
+        margin-right: 10px;
+        width: calc(32.32% - 10px);
+        height: 150px;
+        flex-shrink: 0;  
+    }
+    img{
+        width: 100%;
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    img:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .button-site{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .button-site-link a{
+        background: #7b4fbf;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        box-shadow: 0px 4px 15px rgba(123, 79, 191, 0.3);
+        transition: 0.3s ease;
+    }
+    .button-site-link a:hover {
+        background-color: aliceblue;
+        color: #000;
+        transform: translateY(-2px);
+        box-shadow: 0px 8px 20px rgba(123, 79, 191, 0.4);
+    }
+
+</style>
+<body>
+    <div class="header-box"></div>
+        <div class="content-box">
+               <h1>Humans love Ramen</h1>
+                <h3>Ramen in japan is one of the most popular food in Japan that many tourist wants to go to japan to taste it.</h3>
+                <p>
+                    Ramen is one of the most popular foods in Japan and is widely loved for its rich broth, flavorful noodles, 
+                    and delicious toppings such as chashu pork, egg, and seaweed. It has become an important part of Japanese culture and can be found everywhere, from small local ramen shops to large restaurants. There are different types of ramen in Japan, including shoyu, miso, tonkotsu, and shio ramen, each offering a unique taste depending on the region. Because of its comforting flavor and variety, 
+                    ramen continues to be enjoyed not only in Japan but also around the world.
+                </p>
+                <div class="image-src">
+                    <div class="image-content">
+                        <img src="../app/image/ramen.jpeg" alt="ramen">
+                    </div>
+                    <div class="image-content">
+                        <img src="../app/image/ramen3.jpg" alt="ramen">
+                    </div>
+                    <div class="image-content">
+                        <img src="../app/image/ramen2.jpg" alt="ramen">
+                    </div>
+                </div>
+
+                <div class="button-site">
+                    <div class="button-site-link">
+                        <a href="../app/loginpage.html" class="btn">Login here</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
